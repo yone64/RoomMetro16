@@ -1,0 +1,26 @@
+﻿<Page
+    x:Class="Manipulation.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Manipulation"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="{StaticResource ApplicationPageBackgroundThemeBrush}">
+        <Ellipse Fill="#FFF030F0" HorizontalAlignment="Left" Height="75" Margin="449,306,0,0" Stroke="Black" VerticalAlignment="Top" Width="278" ManipulationMode="All" ManipulationDelta="Ellipse_ManipulationDelta">
+            <Ellipse.RenderTransform>
+                <TransformGroup>
+                    <MatrixTransform/>
+                    <CompositeTransform/>
+                </TransformGroup>
+            </Ellipse.RenderTransform>
+        </Ellipse>
+        <Rectangle Fill="#FF53F030" HorizontalAlignment="Left" Height="100" Margin="940,188,0,0" Stroke="Black" VerticalAlignment="Top" Width="100" ManipulationMode="All" ManipulationDelta="Rectangle_ManipulationDelta">
+            <Rectangle.RenderTransform>
+                <CompositeTransform/>
+            </Rectangle.RenderTransform>
+        </Rectangle>
+
+    </Grid>
+</Page>
